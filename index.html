@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWell | Personalized Cognitive Behavioral Therapy</title>
+    <meta name="description" content="Professional Cognitive Behavioral Therapy platform. Personalized trauma-informed CBT with 25 years of therapeutic experience. Start your mental wellness journey today.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Cognitive Behavioral Therapy, Brain behavior emotions, Brain health, Mental wellness, Trauma informed, Aaron Beck, Psycho therapy, Veterans' health, PTSD">
+    <link rel="canonical" href="https://mindwelltherapy.com">
+    
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:title" content="MindWell | Personalized Cognitive Behavioral Therapy">
+    <meta property="og:description" content="Professional Cognitive Behavioral Therapy platform with 25 years of therapeutic experience. Start your mental wellness journey today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mindwelltherapy.com">
+    <meta property="og:image" content="assets/therapy-session.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MindWell | Personalized Cognitive Behavioral Therapy">
+    <meta name="twitter:description" content="Professional Cognitive Behavioral Therapy platform with 25 years of therapeutic experience.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "MindWell Cognitive Behavioral Therapy",
+      "description": "Professional Cognitive Behavioral Therapy platform with 25 years of therapeutic experience.",
+      "url": "https://mindwelltherapy.com",
+      "logo": "https://mindwelltherapy.com/assets/logo.png",
+      "medicalSpecialty": "Cognitive Behavioral Therapy",
+      "hasCredential": "Licensed Clinical Psychologist",
+      "yearsInOperation": "25",
+      "areaServed": "Worldwide",
+      "availableService": {
+        "@type": "Service",
+        "serviceType": "Cognitive Behavioral Therapy",
+        "description": "Personalized trauma-informed CBT sessions"
+      }
+    }
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/hero-bg.jpg" as="image">
+    
+    <!-- CSS -->
+    <style>
+        /* CSS Reset and Base Styles */
+        :root {
+            --primary-blue: #1e40af;
+            --light-blue: #dbeafe;
+            --medium-blue: #3b82f6;
+            --dark-blue: #1e3a8a;
+            --warm-grey: #6b7280;
+            --light-grey: #f3f4f6;
+            --orange: #f59e0b;
+            --light-orange: #fef3c7;
+            --white: #ffffff;
+            --text-dark: #1f2937;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --radius: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark-blue);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--medium-blue);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+        
+        .logo svg {
+            margin-right: 0.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(30, 64, 175, 0.7), rgba(30, 64, 175, 0.5)), url('assets/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background-color: var(--orange);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #e69008;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            margin-left: 1rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--orange);
+            border-radius: 2px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-image {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* How It Works Section */
+        .how-it-works {
+            background-color: var(--light-grey);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .step {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background-color: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            font-size: 2rem;
+        }
+        
+        .step h3 {
+            margin-bottom: 1rem;
+        }
+        
+        /* Therapy Section */
+        .therapy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .therapy-header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .therapy-chat {
+            height: 400px;
+            overflow-y: auto;
+            padding: 1.5rem;
+            background-color: var(--light-grey);
+        }
+        
+        .message {
+            margin-bottom: 1.5rem;
+            display: flex;
+        }
+        
+        .user-message {
+            justify-content: flex-end;
+        }
+        
+        .therapist-message {
+            justify-content: flex-start;
+        }
+        
+        .message-bubble {
+            max-width: 70%;
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+            position: relative;
+        }
+        
+        .user-message .message-bubble {
+            background-color: var(--medium-blue);
+            color: var(--white);
+            border-bottom-right-radius: 0.5rem;
+        }
+        
+        .therapist-message .message-bubble {
+            background-color: var(--white);
+            color: var(--text-dark);
+            border: 1px solid var(--light-grey);
+            border-bottom-left-radius: 0.5rem;
+        }
+        
+        .therapy-input {
+            display: flex;
+            padding: 1.5rem;
+            border-top: 1px solid var(--light-grey);
+        }
+        
+        .therapy-input input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--warm-grey);
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+        
+        .therapy-input button {
+            margin-left: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .therapy-input button:hover {
+            background-color: var(--dark-blue);
+        }
+        
+        .session-progress {
+            height: 6px;
+            background-color: var(--light-grey);
+            position: relative;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background-color: var(--orange);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        /* Session Summary Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light-grey);
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--warm-grey);
+        }
+        
+        .session-highlights {
+            margin-bottom: 2rem;
+        }
+        
+        .highlight-item {
+            padding: 1rem;
+            background-color: var(--light-blue);
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+        }
+        
+        /* Login Modal */
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--warm-grey);
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: var(--light-grey);
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-grey);
+            font-size: 0.875rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: var(--shadow);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav li {
+                margin: 0;
+                text-align: center;
+            }
+            
+            nav a {
+                display: block;
+                padding: 0.75rem 1rem;
+            }
+            
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 1rem;
+                display: block;
+            }
+            
+            .message-bubble {
+                max-width: 85%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section {
+                padding: 2.5rem 0;
+            }
+            
+            .hero {
+                min-height: 500px;
+            }
+            
+            .step {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                    <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM13 16H11V14H13V16ZM13 12H11V8H13V12Z" fill="currentColor"/>
+                </svg>
+                MindWell
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#about">About CBT</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#therapy">Start Therapy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Personalized Cognitive Behavioral Therapy</h1>
+            <p>Accessible mental wellness with 25 years of therapeutic experience. Start your healing journey today with our trauma-informed CBT approach.</p>
+            <div>
+                <a href="#therapy" class="btn">Start Your Session</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Cognitive Behavioral Therapy</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Cognitive Behavioral Therapy (CBT) is a highly effective, evidence-based psychological treatment that helps people understand the connections between their thoughts, feelings, and behaviors.</p>
+                    <p>With 25 years of clinical experience, our platform delivers personalized, trauma-informed CBT that empowers you to identify and change negative thought patterns and develop healthier coping strategies.</p>
+                    <p>Our approach is collaborative and structured, focusing on your current challenges while providing practical tools you can apply immediately to improve your mental wellness.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/therapy-session.jpg" alt="Therapy session in progress" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Start Without Registration</h3>
+                    <p>Begin your first 3 sessions immediately without any sign-up process. Experience the benefits of CBT right away.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Personalized Sessions</h3>
+                    <p>Each of our 12 sessions builds on the previous one, creating a tailored therapeutic journey just for you.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Your progress is saved locally on your device. Continue right where you left off in your next session.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapy Section -->
+    <section class="therapy" id="therapy">
+        <div class="container">
+            <div class="section-title">
+                <h2>Your Therapy Session</h2>
+            </div>
+            <div class="therapy-container">
+                <div class="therapy-header">
+                    <h3>Session <span id="session-number">1</span> of 12</h3>
+                    <p>Welcome to your personalized CBT session</p>
+                </div>
+                <div class="session-progress">
+                    <div class="progress-bar" id="session-progress"></div>
+                </div>
+                <div class="therapy-chat" id="chat-container">
+                    <div class="message therapist-message">
+                        <div class="message-bubble">
+                            <p>Hello and welcome. I'm here to support you through Cognitive Behavioral Therapy. What would you like to discuss today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapy-input">
+                    <input type="text" id="user-input" placeholder="Type your message here..." aria-label="Your message">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Session Summary Modal -->
+    <div class="modal" id="session-summary-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Session Summary</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="session-highlights" id="session-highlights">
+                <!-- Highlights will be dynamically inserted here -->
+            </div>
+            <div class="form-group">
+                <label for="session-takeaway">What did you get out of this session that you will be working on?</label>
+                <textarea id="session-takeaway" rows="3" placeholder="Share your key takeaways..."></textarea>
+            </div>
+            <button class="btn" id="acknowledge-btn">Acknowledge & Continue</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Your Account</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <p>To continue beyond your 3 free sessions, please create a simple account to save your progress.</p>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">4-Digit PIN</label>
+                    <input type="password" id="password" maxlength="4" pattern="\d{4}" required>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MindWell CBT</h3>
+                    <p>Professional Cognitive Behavioral Therapy platform with 25 years of therapeutic experience.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About CBT</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#therapy">Start Therapy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" rel="noopener noreferrer" target="_blank">Mental Health Resources</a></li>
+                        <li><a href="#" rel="noopener noreferrer" target="_blank">CBT Techniques</a></li>
+                        <li><a href="#" rel="noopener noreferrer" target="_blank">Crisis Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MindWell Cognitive Behavioral Therapy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // DOM Elements
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const sessionSummaryModal = document.getElementById('session-summary-modal');
+        const loginModal = document.getElementById('login-modal');
+        const sessionHighlights = document.getElementById('session-highlights');
+        const sessionTakeaway = document.getElementById('session-takeaway');
+        const acknowledgeBtn = document.getElementById('acknowledge-btn');
+        const sessionProgress = document.getElementById('session-progress');
+        const sessionNumber = document.getElementById('session-number');
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav ul');
+        const modalCloses = document.querySelectorAll('.modal-close');
+
+        // Application State
+        let sessionData = {
+            currentSession: 1,
+            messageCount: 0,
+            totalSessions: 12,
+            messagesPerSession: 40,
+            isRegistered: false,
+            sessionCompleted: 0,
+            userMessages: [],
+            therapistResponses: []
+        };
+
+        // CBT Response Templates
+        const cbtResponses = {
+            greetings: [
+                "Hello, I'm glad you're here today. What's been on your mind lately?",
+                "Welcome to our session. How have you been feeling since we last spoke?",
+                "I'm here to listen and support you. What would you like to focus on today?"
+            ],
+            exploration: [
+                "That sounds challenging. Can you tell me more about how that situation made you feel?",
+                "I appreciate you sharing that. What thoughts came to mind when that happened?",
+                "It takes courage to discuss these things. How did you respond to those feelings?"
+            ],
+            cognitiveReframing: [
+                "I notice you mentioned [thought pattern]. Have you considered an alternative perspective?",
+                "That thought seems to be causing distress. What evidence supports or challenges it?",
+                "Let's examine that belief together. How might someone else view this situation?"
+            ],
+            behavioralActivation: [
+                "What's one small step you could take this week to address this challenge?",
+                "How might changing your routine help improve your mood in this situation?",
+                "Let's identify an activity that typically brings you satisfaction. Can you schedule time for it?"
+            ],
+            validation: [
+                "Your feelings are completely valid given what you've experienced.",
+                "It's understandable to feel that way in such circumstances.",
+                "Many people would struggle with similar challenges. You're not alone in this."
+            ],
+            wrapUp: [
+                "As we start to wrap up, let's review what we've discussed today.",
+                "Before we conclude, I'd like to highlight some key points from our session.",
+                "Let's take a moment to reflect on our conversation before we finish."
+            ]
+        };
+
+        // Initialize application
+        function init() {
+            loadSessionData();
+            setupEventListeners();
+            updateUI();
+        }
+
+        // Load session data from localStorage
+        function loadSessionData() {
+            const savedData = localStorage.getItem('mindwellCBTData');
+            if (savedData) {
+                const parsedData = JSON.parse(savedData);
+                sessionData = { ...sessionData, ...parsedData };
+                
+                // If user has completed 3 sessions and isn't registered, show login modal
+                if (sessionData.sessionCompleted >= 3 && !sessionData.isRegistered) {
+                    setTimeout(() => {
+                        loginModal.style.display = 'flex';
+                    }, 1000);
+                }
+            }
+        }
+
+        // Save session data to localStorage
+        function saveSessionData() {
+            localStorage.setItem('mindwellCBTData', JSON.stringify(sessionData));
+        }
+
+        // Set up event listeners
+        function setupEventListeners() {
+            sendBtn.addEventListener('click', sendMessage);
+            userInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            acknowledgeBtn.addEventListener('click', acknowledgeSession);
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+            
+            modalCloses.forEach(closeBtn => {
+                closeBtn.addEventListener('click', (e) => {
+                    e.target.closest('.modal').style.display = 'none';
+                });
+            });
+            
+            // Close modals when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal')) {
+                    e.target.style.display = 'none';
+                }
+            });
+            
+            // Login form submission
+            document.querySelector('.login-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                if (username && password.length === 4) {
+                    sessionData.isRegistered = true;
+                    sessionData.username = username;
+                    saveSessionData();
+                    loginModal.style.display = 'none';
+                    addMessageToChat("therapist", "Thank you for creating an account. Your progress will now be saved. Let's continue with your therapy journey.");
+                }
+            });
+        }
+
+        // Update UI based on current state
+        function updateUI() {
+            sessionNumber.textContent = sessionData.currentSession;
+            const progressPercentage = (sessionData.messageCount / sessionData.messagesPerSession) * 100;
+            sessionProgress.style.width = `${progressPercentage}%`;
+        }
+
+        // Send message from user
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessageToChat("user", message);
+            sessionData.userMessages.push(message);
+            sessionData.messageCount++;
+            
+            // Clear input
+            userInput.value = '';
+            
+            // Generate and add therapist response
+            setTimeout(() => {
+                const response = generateTherapistResponse(message);
+                addMessageToChat("therapist", response);
+                sessionData.therapistResponses.push(response);
+                
+                // Check if session should wrap up
+                if (sessionData.messageCount >= sessionData.messagesPerSession) {
+                    setTimeout(() => {
+                        wrapUpSession();
+                    }, 1000);
+                }
+                
+                // Update UI and save data
+                updateUI();
+                saveSessionData();
+            }, 1000);
+        }
+
+        // Add message to chat container
+        function addMessageToChat(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            
+            const messageP = document.createElement('p');
+            messageP.textContent = message;
+            
+            bubbleDiv.appendChild(messageP);
+            messageDiv.appendChild(bubbleDiv);
+            chatContainer.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Generate therapist response based on user input
+        function generateTherapistResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+            
+            // Check for greeting
+            if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+                return getRandomResponse(cbtResponses.greetings);
+            }
+            
+            // Check for emotional content
+            if (message.includes('sad') || message.includes('depressed') || message.includes('unhappy')) {
+                return getRandomResponse(cbtResponses.exploration);
+            }
+            
+            if (message.includes('anxious') || message.includes('worried') || message.includes('nervous')) {
+                return getRandomResponse(cbtResponses.cognitiveReframing);
+            }
+            
+            if (message.includes('angry') || message.includes('frustrated') || message.includes('mad')) {
+                return getRandomResponse(cbtResponses.exploration);
+            }
+            
+            // Default to exploration or validation
+            const responses = [...cbtResponses.exploration, ...cbtResponses.validation];
+            return getRandomResponse(responses);
+        }
+
+        // Get random response from array
+        function getRandomResponse(responses) {
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+
+        // Wrap up the current session
+        function wrapUpSession() {
+            // Add wrap-up message
+            addMessageToChat("therapist", getRandomResponse(cbtResponses.wrapUp));
+            
+            // Generate session highlights
+            generateSessionHighlights();
+            
+            // Show session summary modal after a delay
+            setTimeout(() => {
+                sessionSummaryModal.style.display = 'flex';
+            }, 1500);
+        }
+
+        // Generate session highlights based on conversation
+        function generateSessionHighlights() {
+            sessionHighlights.innerHTML = '';
+            
+            // Create highlight items based on conversation themes
+            const highlights = [
+                "Identified key thought patterns influencing your emotions",
+                "Explored connections between thoughts, feelings, and behaviors",
+                "Discussed practical strategies for challenging unhelpful thoughts"
+            ];
+            
+            highlights.forEach(highlight => {
+                const highlightItem = document.createElement('div');
+                highlightItem.className = 'highlight-item';
+                highlightItem.textContent = highlight;
+                sessionHighlights.appendChild(highlightItem);
+            });
+        }
+
+        // Acknowledge session completion
+        function acknowledgeSession() {
+            const takeaway = sessionTakeaway.value.trim();
+            if (takeaway) {
+                sessionData.sessionTakeaways = sessionData.sessionTakeaways || [];
+                sessionData.sessionTakeaways.push(takeaway);
+            }
+            
+            // Close modal
+            sessionSummaryModal.style.display = 'none';
+            
+            // Add final message
+            addMessageToChat("therapist", "Thank you for your participation in today's session. Remember to be kind to yourself as you work on these insights. I look forward to our next session!");
+            
+            // Reset for next session
+            sessionData.currentSession++;
+            sessionData.messageCount = 0;
+            sessionData.sessionCompleted++;
+            sessionData.userMessages = [];
+            sessionData.therapistResponses = [];
+            
+            // Update UI and save
+            updateUI();
+            saveSessionData();
+            
+            // Check if user needs to register
+            if (sessionData.sessionCompleted >= 3 && !sessionData.isRegistered) {
+                setTimeout(() => {
+                    loginModal.style.display = 'flex';
+                }, 2000);
+            }
+        }
+
+        // Initialize the application when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
